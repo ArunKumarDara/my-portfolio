@@ -1,6 +1,10 @@
 import { Link } from "react-scroll";
+import hamburgerIcon from "../assets/hamburger.png";
+import closeIcon from "../assets/close.png";
+import { useState } from "react";
 
 const Nav = () => {
+  const [menu, setMenu] = useState(true);
   return (
     <>
       <nav id="desktop-nav">
@@ -54,52 +58,64 @@ const Nav = () => {
         <div className="logo">Arun Kumar</div>
         <div className="hamburger-menu">
           <div className="hamburger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
+            {menu ? (
+              <img
+                src={hamburgerIcon}
+                alt="Hamburger menu icon"
+                onClick={() => setMenu(false)}
+              />
+            ) : (
+              <img
+                src={closeIcon}
+                alt="Hamburger close icon"
+                onClick={() => setMenu(true)}
+              />
+            )}
           </div>
-          <div className="menu-links">
-            <li>
-              <Link
-                to="about"
-                smooth={true}
-                duration={100}
-                style={{ cursor: "pointer" }}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="experience"
-                smooth={true}
-                duration={100}
-                style={{ cursor: "pointer" }}
-              >
-                Experience
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="projects"
-                smooth={true}
-                duration={100}
-                style={{ cursor: "pointer" }}
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="contact"
-                smooth={true}
-                duration={100}
-                style={{ cursor: "pointer" }}
-              >
-                Contact
-              </Link>
-            </li>
-          </div>
+          {!menu && (
+            <div className="menu-links">
+              <li>
+                <Link
+                  to="about"
+                  smooth={true}
+                  duration={100}
+                  style={{ cursor: "pointer" }}
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="experience"
+                  smooth={true}
+                  duration={100}
+                  style={{ cursor: "pointer" }}
+                >
+                  Experience
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="projects"
+                  smooth={true}
+                  duration={100}
+                  style={{ cursor: "pointer" }}
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={100}
+                  style={{ cursor: "pointer" }}
+                >
+                  Contact
+                </Link>
+              </li>
+            </div>
+          )}
         </div>
       </nav>
     </>
