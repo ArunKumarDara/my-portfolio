@@ -1,7 +1,8 @@
 import linkedInImage from "../assets/linkedin.png";
 import githubImage from "../assets/github.png";
 import profilePic from "../assets/profile-pic-3.jpg";
-import webDeveloper from "../assets/webDeveloper.pdf";
+import webDeveloper from "../assets/resume_arun.pdf";
+
 import { Link } from "react-scroll";
 
 const Profile = () => {
