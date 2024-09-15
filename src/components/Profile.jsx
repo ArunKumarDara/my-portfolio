@@ -1,7 +1,7 @@
 import linkedInImage from "../assets/linkedin.png";
 import githubImage from "../assets/github.png";
 import profilePic from "../assets/profile-pic-3.jpg";
-import mernDev from "../assets/MERN-DEV.PDF";
+import mernDev from "../assets/MERN-DEV.pdf";
 
 import { Link } from "react-scroll";
 
