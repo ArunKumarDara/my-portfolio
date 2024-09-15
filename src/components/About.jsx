@@ -1,7 +1,6 @@
 import educationImg from "../assets/education.png";
 import arrow from "../assets/arrow.png";
 import experienceImg from "../assets/experience.png";
-import developerImg from "../assets/developer.jpg";
 import { Link } from "react-scroll";
 
 const About = () => {
@@ -10,9 +9,6 @@ const About = () => {
       <p className="section__text__p1">Get To Know More</p>
       <h1 className="title">About Me</h1>
       <div className="section-container">
-        <div className="section__pic-container">
-          <img src={developerImg} alt="Profile picture" className="about-pic" />
-        </div>
         <div className="about-details-container">
           <div className="about-containers">
             <div className="details-container">
@@ -30,6 +26,17 @@ const About = () => {
                 B.Tech. Bachelors Degree,
                 <br />
                 M.Tech. Masters Degree
+              </p>
+            </div>
+            <div className="details-container">
+              <img src={educationImg} alt="Education icon" className="icon" />
+              <h3>Scaler</h3>
+              <p>
+                LLD (Low-Level Design),
+                <br />
+                HLD (High-Level Design),
+                <br />
+                MERN Stack
               </p>
             </div>
           </div>

@@ -54,6 +54,20 @@ const Experiance = () => {
                   <p>Intermediate</p>
                 </div>
               </article>
+              <article>
+                <img src={checkMark} alt="Experience icon" className="icon" />
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src={checkMark} alt="Experience icon" className="icon" />
+                <div>
+                  <h3>React Query</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
           </div>
           <div className="details-container">
@@ -90,7 +104,21 @@ const Experiance = () => {
               <article>
                 <img src={checkMark} alt="Experience icon" className="icon" />
                 <div>
+                  <h3>Mongoose</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src={checkMark} alt="Experience icon" className="icon" />
+                <div>
                   <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img src={checkMark} alt="Experience icon" className="icon" />
+                <div>
+                  <h3>Docker Containers</h3>
                   <p>Basic</p>
                 </div>
               </article>
