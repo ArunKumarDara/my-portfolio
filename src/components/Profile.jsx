@@ -1,7 +1,7 @@
 import linkedInImage from "../assets/linkedin.png";
 import githubImage from "../assets/github.png";
 import profilePic from "../assets/profile-pic-3.jpg";
-import webDeveloper from "../assets/Mern-Developer.pdf";
+import mernDev from "../assets/MERN-DEV.PDF";
 
 import { Link } from "react-scroll";
 
@@ -20,7 +20,7 @@ const Profile = () => {
         <h1 className="title">Arun Kumar</h1>
         <p className="section__text__p2">Full Stack Developer</p>
         <div className="btn-container">
-          <a href={webDeveloper} target="_blank" rel="noopener noreferrer">
+          <a href={mernDev} target="_blank" rel="noopener noreferrer">
             <button className="btn btn-color-2">View Ressume</button>
           </a>
           <Link
